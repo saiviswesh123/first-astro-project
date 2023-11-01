@@ -1,20 +1,32 @@
 ---
-const pageTitle = "Home"
+import "../styles/global.css";
+
+const pageTitle = "Home";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<a href="/">Home</a><br>
-		<a href="/about/">About</a><br>
-		<a href="/blog/">Blog</a><br>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
 
-		<h1>{pageTitle}</h1>
-	</body>
+		
+  </head>
+  <body>
+    <ul>
+      <li>
+				<a href="/">Home</a>
+			</li>
+      <li>
+				<a href="/about/">About</a>
+			</li>
+      <li>
+				<a href="/blog/">Blog</a>
+			</li>
+    </ul>
+
+    <h1>{pageTitle}</h1>
+  </body>
 </html>
