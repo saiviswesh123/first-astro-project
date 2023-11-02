@@ -1,0 +1,42 @@
+---
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Document</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        background-color: white;
+        justify-content: start;
+        padding: 10px;
+        width: 100vw;
+        padding: 20px;
+      }
+
+      ul > li > a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-links" id="hamburger-elements">
+      <a href="/">Home</a>
+
+      <a href="/about/">About</a>
+
+      <a href="/blog/">Blog</a>
+    </div>
+  </body>
+</html>
